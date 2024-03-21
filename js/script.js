@@ -104,3 +104,13 @@ nextArrow.addEventListener('click', function(){
     allImages[activeItem].classList.add('active');
     allThumbnails[activeItem].classList.add('active');
 });
+
+// selezionare la freccia in alto
+
+const previousArrow = document.querySelector('.arrow.previous');
+previousArrow.addEventListener('click', function() {
+    // rimuovere classe active dall'elemento corrente
+    // decrementare activeItem di 1
+    // aggiungere classe active al nuovo activeItem
+    
+});
