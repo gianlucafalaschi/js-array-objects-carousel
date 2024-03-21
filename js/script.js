@@ -53,7 +53,7 @@ const thumbnailsContainer = document.querySelector('.thumbnails-container');
 
 for(let i = 0; i < images.length; i++) {
     const group = images[i];
-};
+
 
 
 const newImage =`
@@ -67,3 +67,5 @@ const newImage =`
 `;
 
 imagesContainer.innerHTML += newImage;
+
+};
