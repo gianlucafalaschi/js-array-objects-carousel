@@ -52,16 +52,16 @@ const imagesContainer = document.querySelector('.images-container');
 const thumbnailsContainer = document.querySelector('.thumbnails-container');
 
 for(let i = 0; i < images.length; i++) {
-    const group = images[i];
+    const thisPath = images[i];
 
 
 
     const newImage =`
     <div class="image active">
-        <img src="img/01.webp" alt="spider-man">
+        <img src="${thisPath.image}" alt="spider-man">
         <div class="description">
-            <div class="title">Marvel\'s Spiderman Miles Morale</div>
-            <div class="text">Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.</div>
+            <div class="title">${thisPath.title}</div>
+            <div class="text">${thisPath.text}</div>
         </div>
     </div>
     `;
