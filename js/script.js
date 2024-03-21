@@ -85,3 +85,14 @@ const allImages = document.querySelectorAll('.image');
 allImages[activeItem].classList.add('active');
 const allThumbnails = document.querySelectorAll('.thumbnail');
 allThumbnails[activeItem].classList.add('active');
+
+// selezionare la freccia in basso 
+const nextArrow = document.querySelector('.arrow.next');
+nextArrow.addEventListener('click', function(){
+    // rimuovere classe active dall'elemento corrente
+    // decrementiamo activeItem di 1
+    // aggiungiamo active al nuovo activeItem
+    document.querySelector('image.active').classList.remove('active');
+    document.querySelector('thumbnail.active').classList.remove('active');
+
+});
