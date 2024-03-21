@@ -92,7 +92,15 @@ nextArrow.addEventListener('click', function(){
     // rimuovere classe active dall'elemento corrente
     // decrementiamo activeItem di 1
     // aggiungiamo active al nuovo activeItem
-    document.querySelector('image.active').classList.remove('active');
-    document.querySelector('thumbnail.active').classList.remove('active');
+    document.querySelector('.image.active').classList.remove('active');
+    document.querySelector('.thumbnail.active').classList.remove('active');
 
+    if(activeItem < allImages.length) {
+        activeItem++;
+    } else {
+        activeItem = 0;
+    }
+
+    allImages[activeItem].classList.add('active');
+    allThumbnails[activeItem].classList.add('active');
 });
