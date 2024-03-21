@@ -45,6 +45,8 @@ const images = [
 ];
 
 
+let activeItem = 0;
+
 // Per ogni immagine nell'array prendo il contenitore delle immagini
 // e gli aggiungo la singola immagine
 
@@ -68,4 +70,14 @@ for(let i = 0; i < images.length; i++) {
 
     imagesContainer.innerHTML += newImage;
 
-};
+    const newThumbnails = `
+    <div class="thumbnail">
+        <img src="${thisPath.image}">
+    </div>
+    `;
+
+    thumbnailsContainer.innerHTML += newThumbnails;
+}
+
+// Aggiungere classe active alla prima immagine
+
