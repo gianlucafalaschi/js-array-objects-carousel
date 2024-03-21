@@ -59,7 +59,7 @@ for(let i = 0; i < images.length; i++) {
 
 
     const newImage =`
-    <div class="image active">
+    <div class="image">
         <img src="${thisPath.image}" alt="spider-man">
         <div class="description">
             <div class="title">${thisPath.title}</div>
@@ -81,3 +81,7 @@ for(let i = 0; i < images.length; i++) {
 
 // Aggiungere classe active alla prima immagine
 
+const allImages = document.querySelectorAll('.image');
+allImages[activeItem].classList.add('active');
+const allThumbnails = document.querySelectorAll('.thumbnail');
+allThumbnails[activeItem].classList.add('active');
