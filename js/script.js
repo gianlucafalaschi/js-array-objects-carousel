@@ -90,12 +90,12 @@ allThumbnails[activeItem].classList.add('active');
 const nextArrow = document.querySelector('.arrow.next');
 nextArrow.addEventListener('click', function(){
     // rimuovere classe active dall'elemento corrente
-    // decrementiamo activeItem di 1
+    // incrementiamo activeItem di 1
     // aggiungiamo active al nuovo activeItem
     document.querySelector('.image.active').classList.remove('active');
     document.querySelector('.thumbnail.active').classList.remove('active');
 
-    if(activeItem < allImages.length) {
+    if(activeItem < allImages.length - 1) {
         activeItem++;
     } else {
         activeItem = 0;
