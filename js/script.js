@@ -56,16 +56,16 @@ for(let i = 0; i < images.length; i++) {
 
 
 
-const newImage =`
-<div class="image active">
-    <img src="img/01.webp" alt="spider-man">
-    <div class="description">
-        <div class="title">Marvel\'s Spiderman Miles Morale</div>
-        <div class="text">Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.</div>
+    const newImage =`
+    <div class="image active">
+        <img src="img/01.webp" alt="spider-man">
+        <div class="description">
+            <div class="title">Marvel\'s Spiderman Miles Morale</div>
+            <div class="text">Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.</div>
+        </div>
     </div>
-</div>
-`;
+    `;
 
-imagesContainer.innerHTML += newImage;
+    imagesContainer.innerHTML += newImage;
 
 };
