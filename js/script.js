@@ -112,7 +112,7 @@ previousArrow.addEventListener('click', function() {
     // rimuovere classe active dall'elemento corrente
     // decrementare activeItem di 1
     // aggiungere classe active al nuovo activeItem
-    document.querySelector('image.active').classList.remove('active');
+    document.querySelector('.image.active').classList.remove('active');
     document.querySelector('.thumbnail.active').classList.remove('active');
 
     if(activeItem > 0) {
@@ -121,7 +121,7 @@ previousArrow.addEventListener('click', function() {
         activeItem = allImages.length - 1;
     }
 
-    allImages[activeItem].classList.add('.active');
+    allImages[activeItem].classList.add('active');
     allThumbnails[activeItem].classList.add('active');
 
 });
